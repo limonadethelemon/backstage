@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,26 +56,6 @@
         .services li {
             margin: 1rem 0;
         }
-        .newsletter {
-            padding: 2rem;
-            text-align: center;
-        }
-        .newsletter input[type="email"] {
-            padding: 0.5rem;
-            font-size: 1rem;
-            margin-right: 0.5rem;
-        }
-        .newsletter button {
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            background-color: #e91e63;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .newsletter button:hover {
-            background-color: #d81b60;
-        }
         footer {
             background-color: #333;
             color: white;
@@ -86,17 +66,6 @@
             width: 100%;
         }
     </style>
-    <script>
-        function subscribeNewsletter() {
-            const email = document.getElementById('newsletter-email').value;
-            if (email) {
-                window.location.href = `mailto:1000thr.earthmover.benjamin@gmail.com?subject=Newsletter Subscription&body=Please add ${email} to the newsletter.`;
-                alert('Thank you for subscribing to our newsletter!');
-            } else {
-                alert('Please enter a valid email address.');
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -124,12 +93,6 @@
     <section id="about" class="about">
         <h2>About Us</h2>
         <p>At Glamour Hair Studio, we believe that your hair is your crown. With over 10 years of experience, our professional stylists are dedicated to providing the best care and latest trends tailored just for you.</p>
-    </section>
-    <section class="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay updated with the latest styles and offers from Glamour Hair Studio!</p>
-        <input type="email" id="newsletter-email" placeholder="Enter your email">
-        <button onclick="subscribeNewsletter()">Subscribe</button>
     </section>
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
