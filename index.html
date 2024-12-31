@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Hair Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, black, #1a1a1a);
+            color: white;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        nav a:hover {
+            background-color: #e91e63;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('hairdresser-hero.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .services, .contact {
+            padding: 2rem;
+            text-align: center;
+        }
+        .services h2, .contact h2 {
+            color: white;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            margin: 1rem 0;
+        }
+        .newsletter {
+            padding: 2rem;
+            text-align: center;
+        }
+        .newsletter input[type="email"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+        .newsletter button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #d81b60;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletter-email').value;
+            if (email) {
+                window.location.href = `mailto:1000thr.earthmover.benjamin@gmail.com?subject=Newsletter Subscription&body=Please add ${email} to the newsletter.`;
+                alert('Thank you for subscribing to our newsletter!');
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Glamour Hair Studio</h1>
+        <p>Where style meets perfection</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Glamour Hair Studio</h1>
+        <p>Your hair, our passion.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Haircuts and Styling</li>
+            <li>Coloring and Highlights</li>
+            <li>Blowouts and Treatments</li>
+            <li>Bridal and Special Occasion Styling</li>
+        </ul>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Glamour Hair Studio, we believe that your hair is your crown. With over 10 years of experience, our professional stylists are dedicated to providing the best care and latest trends tailored just for you.</p>
+    </section>
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest styles and offers from Glamour Hair Studio!</p>
+        <input type="email" id="newsletter-email" placeholder="Enter your email">
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 123 Hair Avenue, Style City</p>
+        <p>📞 (123) 456-7890</p>
+        <p>📧 contact@glamourhairstudio.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Glamour Hair Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
